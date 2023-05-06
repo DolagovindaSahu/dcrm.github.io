@@ -15,7 +15,7 @@ def home(request):
 			messages.success(request,"You Have been logged In!")
 			return redirect('home')
 		else : 
-			messages.success(request,"There was an Error logging in, Try again...")
+			messages.success(request,"You have not been register to our website.\n To continue please register")
 			return redirect('home')
 	else :
 		return render(request,'home.html',{})
